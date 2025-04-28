@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1brepjhr6003"]
+
+[ext_resource type="Texture2D" uid="uid://cv4qyst0h6ao6" path="res://assets/free-swamp-game-tileset-pixel-art/3 Objects/Bushes/4.png" id="1_lad4k"]
+
+[node name="Bush" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_lad4k")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(4, 4)
+polygon = PackedVector2Array(12.5, -10.5, 3, -11.75, -1.25, -8, -7, -3.5, -12.25, 3, -16, 6.75, -15.5, 10.5, 15.5, 10.5, 16.25, 2, 13.75, 0.5, 14, -6.75)
